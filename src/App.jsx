@@ -4,6 +4,7 @@ import Tmdb from "./Tmdb";
 import Header from "./components/Header";
 import MovieRow from "./components/MovieRow";
 import FeaturedMovie from "./components/FeaturedMovie";
+import Footer from "./components/Footer";
 
 import "./App.css";
 
@@ -59,6 +60,13 @@ function App() {
                <MovieRow key={key} title={item.title} items={item.items} />
             ))}
          </section>
+
+         <Footer></Footer>
+         {movieList.length <= 0 && (
+            <div className="loading">
+               <img src="https://i.gifer.com/8Etj.gif" alt="carregando" />
+            </div>
+         )}
       </div>
    );
 }

@@ -1,0 +1,11 @@
+footer {
+   padding: 1rem;
+   text-align: center;
+   line-height: 3rem;
+   background-color: #161616;
+   margin-top: 10rem;
+}
+
+footer span {
+   font-weight: bold;
+}

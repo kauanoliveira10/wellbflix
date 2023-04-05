@@ -83,3 +83,13 @@
    font-size: 1.8rem;
    color: #999;
 }
+
+@media (max-width: 760px) {
+   .featured {
+      height: 90vh;
+   }
+
+   .description {
+      max-width: 90%;
+   }
+}

@@ -1,32 +1,69 @@
 .movie-row {
-  margin-bottom: 30px;
+   margin-bottom: 30px;
 }
 
 .movie-row h2 {
-  margin: 0px 0px 0px 30px;
+   margin: 0px 0px 0px 30px;
 }
 
 .list-area {
-  overflow-x: hidden;
-  padding-left: 30px;
+   overflow-x: hidden;
+   padding-left: 30px;
 }
 
-.list {
-  width: 9999999px;
+.list-area {
+   transition: ease-in-out 0.2s;
 }
 
 .list-item {
-  display: inline-block;
-  width: 200px;
+   display: inline-block;
+   width: 200px;
 }
 
 .list-item img {
-  width: 100%;
-  transform: scale(0.9);
-  transition: ease-in-out 0.2s;
+   width: 100%;
+   transform: scale(0.9);
+   transition: ease-in-out 0.2s;
 }
 
 .list-item img:hover {
-  transform: scale(1);
-  cursor: pointer;
+   transform: scale(1);
+   cursor: pointer;
+}
+
+.movie-row .left,
+.movie-row .right {
+   margin: 0 auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: absolute;
+   width: 5rem;
+   height: 30rem;
+   z-index: 99;
+   transition: ease-in-out 0.2s;
+   overflow: hidden;
+   opacity: 0;
+   background-color: rgba(0, 0, 0, 0.6);
+}
+
+.movie-row .left {
+   left: 0;
+}
+
+.movie-row .right {
+   right: 0;
+}
+
+.movie-row:hover .left,
+.movie-row:hover .right {
+   opacity: 1;
+}
+
+@media (max-width: 760px) {
+   .movie-row .right,
+   .movie-row .left {
+      height: 36rem;
+      opacity: 1;
+   }
 }
