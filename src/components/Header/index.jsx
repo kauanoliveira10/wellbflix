@@ -5,7 +5,7 @@ export default ({ bg }) => {
       <header className={bg ? "black-bg" : ""}>
          <div className="logo">
             <a href="#!">
-               <img src="./src/assets/logo.png" alt="logo" />
+               <img src="./logo.png" alt="logo" />
             </a>
          </div>
          <div className="user">
